@@ -22,11 +22,70 @@ body {
     margin: 0;
 }
 
+.body {
+    padding: 1.5em;
+}
+
+button {
+    font-family: inherit;
+}
+
 img {
     max-width: 100%;
     display: block;
 }
 
+.product-thumbnail {
+    display: none;
+} 
+
+.company {
+    font-size: .8125rem;
+    font-weight: 700;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.subtitle {
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex .lower-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+}
+
+.flex .lower-price .sale {
+    font-size: 1rem;
+    margin-left: 1em;
+    padding: 0.2em 0.3em;
+    color: var(--orange);
+    border-radius: 5px;
+    background-color: var(--pale-orange);
+}
+
+.flex .original-price {
+    font-weight: 700;
+    color: var(--grayish-blue)
+}
 
 
 
