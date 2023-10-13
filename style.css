@@ -23,10 +23,6 @@ body {
     margin: 0 auto;
 }
 
-.body {
-    padding: 1.5em;
-}
-
 button {
     font-family: inherit;
 }
@@ -35,7 +31,6 @@ img {
     max-width: 100%;
     display: block;
 }
-
 
 .product-img {
     position: relative;
@@ -71,6 +66,10 @@ img {
     display: none;
 } 
 
+.body {
+    padding: 1.5em;
+}
+
 .company {
     font-size: .8125rem;
     font-weight: 700;
@@ -90,13 +89,13 @@ img {
     line-height: 1.5;
 }
 
-.flex {
+.prices {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.flex .lower-price {
+.lower-price {
     font-size: 2rem;
     font-weight: 700;
     color: var(--very-dark-blue);
@@ -104,7 +103,7 @@ img {
     align-items: center;
 }
 
-.flex .lower-price .sale {
+.sale {
     font-size: 1rem;
     margin-left: 1em;
     padding: 0.2em 0.3em;
@@ -113,17 +112,28 @@ img {
     background-color: var(--pale-orange);
 }
 
-.flex .original-price {
+.original-price {
     font-weight: 700;
     color: var(--grayish-blue);
 }
 
 .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: 700;
     padding: 0 1.5rem;
     margin-bottom: 1em;
     border-radius: 8px;
     background-color: var(--light-grayish-blue);
+}
+
+#minus, #plus {
+    cursor: pointer;
+}
+
+#minus:hover, #plus:hover {
+    opacity: .6;
 }
 
 /***** MEDIA QUERIES *****/
@@ -132,19 +142,54 @@ img {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-row-gap: 50px;
+        margin: 5rem 0;
     }
     
     body {
         max-width: 1000px;
     }
     
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .product-img, .body {
+        width: 450px;
+    }
+        
+    .product-img img {
+        border-radius: 10px;
+    }
+    
     .previous, .next {
         display: none;
-    }
+    }    
     
     .product-thumbnail {
         display: flex;
-    } 
+        justify-content: space-between;
+        margin-top: 2rem;        
+    }
+    
+    .product-thumbnail img {
+        width: 90px; 
+    }
+    
+    .prices {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem 0;
+    }  
+    
+    .lower-price, .original-price {
+        margin: 0 0 0.5rem;
+    }
+    
+    .box {
+        width: 35%;
+    }
 }
 
 
