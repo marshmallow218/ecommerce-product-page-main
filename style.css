@@ -160,7 +160,7 @@ img {
         
     .product-img img {
         border-radius: 10px;
-    }
+    }    
     
     .previous, .next {
         display: none;
@@ -170,6 +170,15 @@ img {
         display: flex;
         justify-content: space-between;
         margin-top: 2rem;        
+    }
+    
+     .product-thumbnail img:hover {
+        opacity: .8;     
+    }
+    
+    .selected {
+        border: 2px solid var(--orange);
+        opacity: .6;
     }
     
     .product-thumbnail img {
