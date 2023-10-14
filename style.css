@@ -13,14 +13,49 @@
     --black: hsl(0, 0%, 0%);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    max-width: 500px;
+
     margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    
+}
+
+.logo {
+    /* display: flex;
+    flex-direction: row-reverse; */
+}
+
+.items {
+    display: none;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart {}
+
+#avatar {
+    width: 1.56em;
+    height: 1.56em;
+    margin-left: 1.5em;
 }
 
 button {
@@ -43,7 +78,7 @@ img {
     display: grid;
     place-items: center;
     height: 40px;
-    width: 40px; 
+    width: 40px;
     border-radius: 50%;
     background-color: var(--white);
     cursor: pointer;
@@ -56,7 +91,7 @@ img {
     display: grid;
     place-items: center;
     height: 40px;
-    width: 40px; 
+    width: 40px;
     border-radius: 50%;
     background-color: var(--white);
     cursor: pointer;
@@ -64,7 +99,7 @@ img {
 
 .product-thumbnail {
     display: none;
-} 
+}
 
 .body {
     padding: 1.5em;
@@ -128,74 +163,118 @@ img {
     background-color: var(--light-grayish-blue);
 }
 
-#minus, #plus {
+#minus,
+#plus {
     cursor: pointer;
 }
 
-#minus:hover, #plus:hover {
+#minus:hover,
+#plus:hover {
     opacity: .6;
 }
 
 /***** MEDIA QUERIES *****/
 
-@media (min-width: 1440px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 50px;
-        margin: 5rem 0;
+@media only screen and (min-width: 950px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 0 2em 0;
+        border-bottom: 2px solid var(--grayish-blue);
     }
     
+    .logo{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .items {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2em;
+        font-family: 'Kumbh Sans', sans-serif;
+        color: var(--grayish-blue);
+        font-weight: 400;
+    }
+
+    .item{
+        padding-left: 1.5em;
+    }
+    
+    .profile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #avatar {
+        width: 3em;
+        height: 3em;
+        margin-left: 1.5em;
+    }
+    
+
+    .product{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4em;
+    }
+
     body {
-        max-width: 1000px;
+        max-width: 80%;
     }
-    
+
     .title {
         font-size: 2.5rem;
     }
-    
-    .product-img, .body {
-        width: 450px;
-    }
-        
+
     .product-img img {
         border-radius: 10px;
-    }    
-    
-    .previous, .next {
+    }
+
+    .previous,
+    .next {
         display: none;
-    }    
-    
+    }
+
     .product-thumbnail {
         display: flex;
         justify-content: space-between;
-        margin-top: 2rem;        
+        margin-top: 2rem;
     }
-    
-     .product-thumbnail img:hover {
-        opacity: .8;     
+
+    .product-thumbnail img:hover {
+        opacity: .8;
     }
-    
+
     .selected {
         border: 2px solid var(--orange);
         opacity: .6;
     }
-    
+
     .product-thumbnail img {
-        width: 90px; 
+        width: 90px;
     }
-    
+
     .prices {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         margin: 1rem 0;
-    }  
-    
-    .lower-price, .original-price {
+    }
+
+    .lower-price,
+    .original-price {
         margin: 0 0 0.5rem;
     }
-    
+
     .box {
         width: 35%;
     }
@@ -208,11 +287,11 @@ img {
 
 /* attribution styling */
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.attribution {
+    font-size: 11px;
+    text-align: center;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
