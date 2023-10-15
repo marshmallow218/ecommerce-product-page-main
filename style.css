@@ -290,12 +290,12 @@ img {
     }
 
     .product-thumbnail img:hover {
-        opacity: .8;
+        opacity: .7;
     }
 
     .selected {
         border: 2px solid var(--orange);
-        opacity: .6;
+        opacity: .5;
     }
 
     .product-thumbnail img {
