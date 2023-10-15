@@ -189,10 +189,10 @@ img {
     justify-content: center;
     align-items: center;
     font-weight: 700;
-padding: 1em;
-color: var(--white);
-background-color: var(--orange);
-border-radius: 8px;
+    padding: 1em;
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 8px;
 }
 
 #cartButton{
@@ -322,7 +322,7 @@ border-radius: 8px;
 
     .box {
         width: 40%;
-    margin-bottom: 0;
+        margin-bottom: 0;
     }
 
     .quantity{
