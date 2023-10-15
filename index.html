@@ -3,72 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
-    <link rel="stylesheet" href="style.css"> 
-    <title>Frontend Mentor | E-commerce product page</title>   
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | E-commerce product page</title>
 </head>
+
 <body>
     <main>
         <nav>
             <div class="logo">
                 <div class="hamburger"></div>
                 <img src="images/logo.svg" alt="">
-                <div class="items">
-                    <div class="item">Collections</div>
-                    <div class="item">Men</div>
-                    <div class="item">Women</div>
-                    <div class="item">About</div>
-                    <div class="item">Contact</div>
-                </div>
+            </div>
+            <div class="items">
+                <div class="item">Collections</div>
+                <div class="item">Men</div>
+                <div class="item">Women</div>
+                <div class="item">About</div>
+                <div class="item">Contact</div>
             </div>
             <div class="profile">
                 <div id="cart"><img src="images/icon-cart.svg" alt=""></div>
                 <div id="avatar"><img src="images/image-avatar.png" alt=""></div>
             </div>
-          </nav>
-          <div class="product">
-              <div class="product-img">
-                  <img src="images/image-product-1.jpg" alt="">
-                  <div class="previous">
-                      <img src="images/icon-previous.svg" alt="previous button">
-                  </div>
-                  <div class="next">
-                      <img src="images/icon-next.svg" alt="next button">
-                  </div>                          
-                  <div class="product-thumbnail">
-                      <img src="images/image-product-1-thumbnail.jpg" alt="" class="selected">
-                      <img src="images/image-product-2-thumbnail.jpg" alt="">
-                      <img src="images/image-product-3-thumbnail.jpg" alt="">
-                      <img src="images/image-product-4-thumbnail.jpg" alt="">
-                  </div>            
-              </div>
-              <div class="body">
-                  <p class="company">Sneaker Company</p>
-                  <h1 class="title">Fall Limited Edition Sneakers</h1>
-                  <p class="subtitle">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p> 
-                  <div class="prices">
-                      <p class="lower-price">$125.00 <span class="sale">50%</span></p>
-                      <p class="original-price"><s>$250.00</s></p>
-                  </div>   
-                  <div class="box">
-                      <img src="images/icon-minus.svg" alt="minus button" id="minus">
-                      <p class="quantity">0</p>
-                      <img src="images/icon-plus.svg" alt="plus button" id="plus">
-                  </div>
-                  <button>Add to cart</button>  
-              </div>
-          </div>
+        </nav>
+        <div class="product">
+            <div class="product-img">
+                <img src="images/image-product-1.jpg" alt="">
+                <div class="previous">
+                    <img src="images/icon-previous.svg" alt="previous button">
+                </div>
+                <div class="next">
+                    <img src="images/icon-next.svg" alt="next button">
+                </div>
+                <div class="product-thumbnail">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="" class="selected">
+                    <img src="images/image-product-2-thumbnail.jpg" alt="">
+                    <img src="images/image-product-3-thumbnail.jpg" alt="">
+                    <img src="images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+            <div class="body">
+                <p class="company">Sneaker Company</p>
+                <h1 class="title">Fall Limited Edition Sneakers</h1>
+                <p class="subtitle">These low-profile sneakers are your perfect casual wear companion. Featuring a
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="prices">
+                    <p class="lower-price">$125.00 <span class="sale">50%</span></p>
+                    <p class="original-price"><s>$250.00</s></p>
+                </div>
+                <div class="addToCart">
+                    <div class="box">
+                        <img src="images/icon-minus.svg" alt="minus button" id="minus">
+                        <p class="quantity">0</p>
+                        <img src="images/icon-plus.svg" alt="plus button" id="plus">
+                    </div>
+                    <div id="button"><img id="cartButton" src="images/icon-cart.svg" alt="">Add to cart</div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="script.js"></script>
-<!-- 
+    <!-- 
   Collections 
   Men
   Women
   About
   Contact -->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
 </body>
+
 </html>

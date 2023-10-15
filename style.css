@@ -3,7 +3,6 @@
 :root {
     --orange: hsl(26, 100%, 55%);
     --pale-orange: hsl(25, 100%, 94%);
-
     --very-dark-blue: hsl(220, 13%, 13%);
     --dark-grayish-blue: hsl(219, 9%, 45%);
     --grayish-blue: hsl(220, 14%, 75%);
@@ -35,8 +34,7 @@ nav {
 }
 
 .logo {
-    /* display: flex;
-    flex-direction: row-reverse; */
+    cursor: pointer;
 }
 
 .items {
@@ -50,7 +48,13 @@ nav {
     align-items: center;
 }
 
-#cart {}
+#cart:hover{
+    color: var(--dark-grayish-blue);
+}
+
+#cart:hover, .profile:hover, .item:hover, #button:hover {
+    cursor: pointer;
+}
 
 #avatar {
     width: 1.56em;
@@ -58,7 +62,12 @@ nav {
     margin-left: 1.5em;
 }
 
-button {
+#avatar:hover{
+    border: 3px solid var(--orange);
+    border-radius: 50%;
+}
+
+#button {
     font-family: inherit;
 }
 
@@ -173,6 +182,24 @@ img {
     opacity: .6;
 }
 
+#button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+padding: 1em;
+color: var(--white);
+background-color: var(--orange);
+border-radius: 8px;
+}
+
+#cartButton{
+    padding-right: 1em;
+    color: var(--white);
+}
+
 /***** MEDIA QUERIES *****/
 
 @media only screen and (min-width: 950px) {
@@ -198,10 +225,19 @@ img {
         font-family: 'Kumbh Sans', sans-serif;
         color: var(--grayish-blue);
         font-weight: 400;
+        position: absolute;
+        left: 18em;;
     }
 
     .item{
-        padding-left: 1.5em;
+        margin-left: 1.5em;
+        padding-bottom: 2.5em;
+        padding-top: 3em;
+    }
+
+    .item:hover{
+        color: var(--dark-grayish-blue);
+        border-bottom: 3.5px solid var(--orange);
     }
     
     .profile {
@@ -216,7 +252,6 @@ img {
         margin-left: 1.5em;
     }
     
-
     .product{
         display: flex;
         width: 90%;
@@ -225,6 +260,10 @@ img {
         margin-left: auto;
         margin-right: auto;
         margin-top: 4em;
+    }
+
+    .body{
+        padding: 0 0 0 7em;
     }
 
     body {
@@ -275,12 +314,31 @@ img {
         margin: 0 0 0.5rem;
     }
 
-    .box {
-        width: 35%;
+    .addToCart{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
+
+    .box {
+        width: 40%;
+    margin-bottom: 0;
+    }
+
+    .quantity{
+        padding: 0 2em;
+    }
+
+    #button{
+        width: 60%;
+        margin-left: 1.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;    
+    }
+    
 }
-
-
 
 
 
